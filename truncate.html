@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>truncate</title>
+
+</head>
+<body>
+<script>
+    function abbrev(input) {
+        if (input.length < 21){
+            return input;
+        }
+        else return input.replace(input.substr(21), "...");
+
+       /* var dots = "...";
+        var chop = input.substr(21);
+        var short = input.replace(chop, dots);
+        return short;*/
+    }
+    var mystring = prompt("Enter a string");
+    alert(abbrev(mystring));
+
+</script>
+
+    
+</body>
+</html>
